@@ -18,12 +18,8 @@ body {
   flex-direction: column;
   font-weight: 400;
   background-color: var(--color-Purple-100);
-  position: relative;
 }
-.bg-image {
-  z-index: 0;
-  width: 100%;
-}
+
 main {
   margin: 2rem;
   background-color: var(--color-White);
@@ -34,7 +30,7 @@ main {
   padding: 2rem;
   z-index: 1;
   position: relative;
-  bottom: 9rem;
+  bottom: 10rem;
 }
 ul {
   display: flex;
@@ -72,6 +68,12 @@ p {
 .list-title {
   display: flex;
   justify-content: space-between;
+}
+
+.banner .bg-image {
+  width: 100vw;
+  object-fit: fill;
+  background-color: aqua;
 }
 
 @media (min-width: 48rem) {

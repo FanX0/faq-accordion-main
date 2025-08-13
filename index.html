@@ -18,12 +18,13 @@
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   </head>
   <body>
-    <picture class="bg-image">
+    <picture class="banner">
       <!-- For small screens (mobile) -->
       <source
         srcset="./assets/images/background-pattern-mobile.svg"
         type="image/webp"
         media="(max-width: 600px)"
+        class="bg-image"
       />
 
       <!-- For large screens (desktop) -->
@@ -31,6 +32,8 @@
         srcset="./assets/images/background-pattern-desktop.svg"
         type="image/webp"
         media="(min-width: 1025px)"
+        width="1000rem"
+        class="bg-image"
       />
 
       <!-- Fallback for browsers that don’t support webp (JPEG format) -->
@@ -38,17 +41,20 @@
         srcset="./assets/images/background-pattern-mobile.svg"
         type="image/jpeg"
         media="(max-width: 600px)"
+        class="bg-image"
       />
       <source
         srcset="./assets/images/background-pattern-desktop.svg"
         type="image/jpeg"
         media="(min-width: 1025px)"
+        class="bg-image"
       />
 
       <!-- Fallback for older browsers or when `srcset` is not supported -->
       <img
         src="./assets/images/background-pattern-desktop.svg"
         alt="Descriptive Text"
+        class="bg-image"
       />
     </picture>
 
